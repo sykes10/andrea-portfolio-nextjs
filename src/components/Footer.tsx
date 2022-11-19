@@ -1,8 +1,8 @@
-import Button from "./Button";
 import Link from "next/link";
-import Arrow from "./Arrow";
+import Button from "~/components/Button";
+import Arrow from "~/components/Arrow";
 
-export default function Footer() {
+const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
@@ -51,4 +51,6 @@ export default function Footer() {
       </Link>
     </footer>
   );
-}
+};
+
+export default Footer;

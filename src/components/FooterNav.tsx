@@ -1,11 +1,11 @@
-import type { FooterLink } from "../data/footerNav";
-import FooterNavLink from "./FooterNavLink";
+import type { FooterLink } from "~/data/footerNav";
+import FooterNavLink from "~/components/FooterNavLink";
 
 type FooterNavProps = {
   links: FooterLink[];
 };
 
-export default function FooterNav({ links }: FooterNavProps) {
+const FooterNav = ({ links }: FooterNavProps) => {
   return (
     <section className="flex flex-col justify-between gap-14 md:flex-row md:gap-20">
       {links.map((link) => (
@@ -13,4 +13,6 @@ export default function FooterNav({ links }: FooterNavProps) {
       ))}
     </section>
   );
-}
+};
+
+export default FooterNav;

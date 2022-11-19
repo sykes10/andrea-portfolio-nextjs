@@ -1,12 +1,12 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 
 type LayoutProps = {
   children: React.ReactNode;
   className?: string;
 };
 
-export default function Layout({ children }: LayoutProps) {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
@@ -14,4 +14,6 @@ export default function Layout({ children }: LayoutProps) {
       <Footer />
     </>
   );
-}
+};
+
+export default Layout;

@@ -13,7 +13,7 @@ const baskervville = Libre_Baskerville({
   weight: ["400", "700"],
   style: ["normal"],
 });
-const MyApp: AppType = ({ Component, pageProps }) => {
+const AndreaPortfolio: AppType = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -47,4 +47,4 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default AndreaPortfolio;

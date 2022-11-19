@@ -1,5 +1,6 @@
 import Link from "next/link";
-export default function Header() {
+
+const Header = () => {
   return (
     <header className="container mt-4 flex items-center justify-between py-4 md:mt-0 md:py-6">
       <Link href="/" className="no-colour">
@@ -19,4 +20,6 @@ export default function Header() {
       </div>{" "}
     </header>
   );
-}
+};
+
+export default Header;

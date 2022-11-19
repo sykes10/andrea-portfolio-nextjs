@@ -1,14 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { FooterLink } from "../data/footerNav";
+import type { FooterLink } from "~/data/footerNav";
 
-export default function FooterNavLink({
-  href,
-  description,
-  tag,
-  alt,
-  src,
-}: FooterLink) {
+const FooterNavLink = ({ href, description, tag, alt, src }: FooterLink) => {
   return (
     <Link className="w-full md:w-1/2" href={`/case-study/${href}`}>
       <Image
@@ -23,4 +17,6 @@ export default function FooterNavLink({
       <span className="uppercase text-peach-500">{tag}</span>
     </Link>
   );
-}
+};
+
+export default FooterNavLink;

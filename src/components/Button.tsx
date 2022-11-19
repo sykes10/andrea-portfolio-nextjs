@@ -1,10 +1,9 @@
-export default function AppButton({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
+type ButtonProps = {
   className?: string;
-}) {
+  children: React.ReactNode;
+};
+
+const Button = ({ children, className }: ButtonProps) => {
   return (
     <button
       className={`${className} m-0
@@ -30,4 +29,6 @@ export default function AppButton({
       {children}
     </button>
   );
-}
+};
+
+export default Button;
