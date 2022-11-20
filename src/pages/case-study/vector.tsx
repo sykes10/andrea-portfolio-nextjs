@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { footerNavLinksData } from "~/data/footerNav";
-import { FooterLinkKey } from "~/types/data";
 import Video from "~/components/Video";
 import FooterNav from "~/components/FooterNav";
 import Button from "~/components/Button";
@@ -12,13 +11,14 @@ import IconDivider from "~/components/IconDivider";
 
 const Vector = () => {
   const footerNavLinks = [
-    footerNavLinksData[FooterLinkKey.FootballApp],
-    footerNavLinksData[FooterLinkKey.EmailOctopus],
+    footerNavLinksData.EmailOctopus,
+    footerNavLinksData.TicketTailor,
   ];
   return (
     <>
       <Head>
-        <meta name="description" content="" />
+        <title>AndreaDN. | Vector case study</title>
+        <meta name="description" content="Vector re-design case study" />
       </Head>
       <section className="mt-13 mb-11 flex items-center justify-between md:mt-24">
         <Link href="/">

@@ -5,11 +5,11 @@ export type FooterLink = {
   description: string;
   tag: string;
 };
-export enum FooterLinkKey {
-  TicketTailor = "TicketTailor",
-  Atriom = "Atriom",
-  EmailOctopus = "EmailOctopus",
-  FootballApp = "FootballApp",
-  SmallBusiness = "SmallBusiness",
-  Vector = "Vector",
-}
+
+export type FooterLinkKey =
+  | "TicketTailor"
+  | "Atriom"
+  | "EmailOctopus"
+  | "FootballApp"
+  | "SmallBusiness"
+  | "Vector";
