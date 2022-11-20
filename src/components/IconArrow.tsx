@@ -1,8 +1,6 @@
-type ArrowProps = {
-  className?: string;
-};
+import type { IconProps } from "~/types/components";
 
-const Arrow = ({ className }: ArrowProps) => {
+const IconArrow = ({ className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,4 +14,4 @@ const Arrow = ({ className }: ArrowProps) => {
   );
 };
 
-export default Arrow;
+export default IconArrow;

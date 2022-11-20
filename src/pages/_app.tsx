@@ -41,7 +41,7 @@ const AndreaPortfolio: AppType = ({ Component, pageProps }) => {
         }
       `}</style>
       <Layout>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </Layout>
     </>
   );

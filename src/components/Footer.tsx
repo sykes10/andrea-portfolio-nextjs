@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Button from "~/components/Button";
-import Arrow from "~/components/Arrow";
+import IconArrow from "~/components/IconArrow";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -47,7 +47,7 @@ const Footer = () => {
         className="mx-auto mb-16 flex h-13 w-13 items-center justify-center rounded-full border border-black outline-1 outline-offset-2 outline-secondary transition-colors duration-300 hover:border-brown hover:bg-peach-600 focus:outline"
         href="#top"
       >
-        <Arrow />
+        <IconArrow />
       </Link>
     </footer>
   );

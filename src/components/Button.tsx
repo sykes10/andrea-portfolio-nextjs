@@ -1,7 +1,4 @@
-type ButtonProps = {
-  className?: string;
-  children: React.ReactNode;
-};
+import type { ButtonProps } from "~/types/components";
 
 const Button = ({ children, className }: ButtonProps) => {
   return (

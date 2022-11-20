@@ -1,20 +1,6 @@
-export type FooterLink = {
-  href: string;
-  src: string;
-  alt: string;
-  description: string;
-  tag: string;
-};
-export enum FooterLinkKey {
-  TicketTailor = "TicketTailor",
-  Atriom = "Atriom",
-  EmailOctopus = "EmailOctopus",
-  FootballApp = "FootballApp",
-  SmallBusiness = "SmallBusiness",
-  Vector = "Vector",
-}
+import { type FooterLink, FooterLinkKey } from "~/types/data";
 
-export const footerNavLinks: Record<FooterLinkKey, FooterLink> = {
+export const footerNavLinksData: Record<FooterLinkKey, FooterLink> = {
   [FooterLinkKey.TicketTailor]: {
     href: "ticket-tailor",
     src: "img-tt-preview",

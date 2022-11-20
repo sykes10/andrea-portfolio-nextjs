@@ -1,9 +1,5 @@
-import type { FooterLink } from "~/data/footerNav";
 import FooterNavLink from "~/components/FooterNavLink";
-
-type FooterNavProps = {
-  links: FooterLink[];
-};
+import type { FooterNavProps } from "~/types/components";
 
 const FooterNav = ({ links }: FooterNavProps) => {
   return (

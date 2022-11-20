@@ -1,4 +1,5 @@
 import Link from "next/link";
+import IconWork from "~/components/IconWork";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
         </h1>
       </Link>
       <div className="flex items-center">
-        {/* <work-svg class="mr-3 opacity-40" /> */}
+        <IconWork className="mr-3 opacity-40" />
         <div>
           <p className="inline">
             Work status: <span className="font-bold">Available</span>

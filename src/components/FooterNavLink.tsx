@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { FooterLink } from "~/data/footerNav";
+import type { FooterLink } from "~/types/data";
 
 const FooterNavLink = ({ href, description, tag, alt, src }: FooterLink) => {
   return (
