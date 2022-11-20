@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "~/components/Button";
 import IconArrow from "~/components/IconArrow";
+import { footerNavLinksData } from "~/data/footerNav";
 
 const Home: NextPage = () => {
   return (
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
           <Link className="w-full md:w-1/2" href="/case-study/vector">
             <article>
               <Image
-                src="/images/Vector.png"
+                src="/images/vector.png"
                 alt="Vector re-design"
                 loading="lazy"
                 className="mb-4 w-full md:mb-10"
@@ -83,7 +84,7 @@ const Home: NextPage = () => {
             </span>
           </article>
         </Link>
-        <Link href="/case-study/ticket-tailor" className="block">
+        <Link href="/case-study/tickettailor" className="block">
           <article className="mx-auto max-w-4xl">
             <Image
               src="/images/ticket-tailor.png"

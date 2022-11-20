@@ -1,13 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import Head from "next/head";
 import { footerNavLinksData } from "~/data/footerNav";
 import Video from "~/components/Video";
 import FooterNav from "~/components/FooterNav";
-import Button from "~/components/Button";
-import IconArrow from "~/components/IconArrow";
-import IconOpen from "~/components/IconOpen";
-import IconDivider from "~/components/IconDivider";
+import CaseStudyNav from "~/components/CaseStudyNav";
 
 const Vector = () => {
   const footerNavLinks = [
@@ -20,19 +16,7 @@ const Vector = () => {
         <title>AndreaDN. | Vector case study</title>
         <meta name="description" content="Vector re-design case study" />
       </Head>
-      <section className="mt-13 mb-11 flex items-center justify-between md:mt-24">
-        <Link href="/">
-          <Button>
-            <IconArrow />
-          </Button>
-        </Link>
-        <Link href="https://vector-digital.co.uk/" target="_blank">
-          <Button className="flex items-center">
-            Live site
-            <IconOpen className="ml-2" />
-          </Button>
-        </Link>
-      </section>
+      <CaseStudyNav href="https://vector-digital.co.uk/"></CaseStudyNav>
       <section>
         <article className="mb-14 md:mb-24">
           <Image
@@ -213,9 +197,8 @@ const Vector = () => {
             className="mb-10 w-full md:mb-14"
           />
         </article>
-        <IconDivider className="mx-auto mb-14 md:mb-24" />
-        <FooterNav links={footerNavLinks}></FooterNav>
       </section>
+      <FooterNav links={footerNavLinks}></FooterNav>
     </>
   );
 };

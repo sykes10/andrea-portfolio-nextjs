@@ -17,3 +17,7 @@ export type ButtonProps = {
   className?: string;
   children: React.ReactNode;
 };
+
+export type CaseStudyNavProps = {
+  href: string;
+};
